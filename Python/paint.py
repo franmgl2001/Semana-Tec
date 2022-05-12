@@ -53,7 +53,14 @@ def rectangle(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    for i in range(360):
+        forward((end.x-start.x)/25)
+        left(1)
+    endfill()
 
     up()
 def tap(x, y):
