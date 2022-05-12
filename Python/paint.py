@@ -65,7 +65,6 @@ def rectangle(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-<<<<<<< HEAD
     up()
     goto(start.x, start.y)
     down()
@@ -74,15 +73,6 @@ def circle(start, end):
         forward((end.x-start.x)/25)
         left(1)
     end_fill()
-
-=======
->>>>>>> franmg
-    up()
-    down()
-    begin_fill()
-    for count in range (360):
-        forward(en.x-start.x)
-        left(1)
 
 def tap(x, y):
     "Store starting point or draw shape."
