@@ -38,7 +38,7 @@ def triangle(start, end):
     "Draw triangle from start to end."
 
     up()
-    goto(start.x, start.y)
+
     down()
     begin_fill()
 
@@ -65,6 +65,7 @@ def rectangle(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
+<<<<<<< HEAD
     up()
     goto(start.x, start.y)
     down()
@@ -74,7 +75,15 @@ def circle(start, end):
         left(1)
     end_fill()
 
+=======
+>>>>>>> franmg
     up()
+    down()
+    begin_fill()
+    for count in range (360):
+        forward(en.x-start.x)
+        left(1)
+
 def tap(x, y):
     "Store starting point or draw shape."
     start = state['start']
