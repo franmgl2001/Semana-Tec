@@ -49,7 +49,19 @@ def triangle(start, end):
     end_fill()
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(4):
+        if count %2 == 0:
+            forward(end.y-start.x)
+        else:   
+            forward(end.x-start.x)
+        left(90)
+
+    end_fill()
 
 def circle(start, end):
     "Draw circle from start to end."
@@ -60,7 +72,7 @@ def circle(start, end):
     for i in range(360):
         forward((end.x-start.x)/25)
         left(1)
-    endfill()
+    end_fill()
 
     up()
 def tap(x, y):
