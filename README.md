@@ -1,5 +1,9 @@
 # Semana-Tec
-Repositorio de la semana tec
+Repositorio de Semana Tec 
+Archivos cambiados:
+Snake.py
+Paint.py
+Cannon.py
 
 ## Authors 
 - Francisco Martinez Gallardo 
