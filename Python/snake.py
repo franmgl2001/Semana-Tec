@@ -14,18 +14,19 @@ from random import randrange
 from freegames import square, vector
 
 "Counters"
-food = vector(0, 0) #Exercise 3. Helps the food move
+#Exercise 3. Helps the food move
+food = vector(0, 0) 
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 
+#Exercise 4. If you change the values of x and y it will respond different
 def change(x, y):
-    #Exercise 4. If you change the values of x and y it will respond different
     "Change snake direction."
     aim.x = x
     aim.y = y
 
+#Exercise 2. Lets you move boundaries and lets the snake move around the edges
 def inside(head):
-    #Exercise 2. Lets you move boundaries and lets the snake move around the edges
     "Return True if head inside boundaries."
     return -220 < head.x < 200 and -210 < head.y < 200
 
@@ -55,7 +56,7 @@ def move():
     for body in snake:
         square(body.x, body.y, 9, 'blue')
 
-    "Changes the color and size of food"
+    "Changes the color and size of the food"
     square(food.x, food.y, 9, 'green')
     update()
     ontimer(move, 90) #Exercise 1. Makes the snake move faster or slower by moving the time
